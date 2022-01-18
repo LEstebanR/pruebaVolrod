@@ -8,22 +8,24 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setSearch(e.target.value).toLowerCase()
+    setSearch(e.target.value.toLowerCase())
+    
   }
 
   const submit = (e) => {
-    alert('uy')
+    e.preventDefault()
+    window.location.href = `/${search}`
   }
 
 
   return (
     <div className="container-form">
-      <form>
+      <form onSubmit={submit}>
         <input type="text" placeholder="Search Pokemon"onChange={handleSubmit} onSubmit={submit}/>
       </form>
       <div className="buttons">
         <button><Link to={`/${search.toLowerCase()}`}>Search</Link></button>
-        <button><Link classNAme="link"to="/random">Random</Link></button>
+        <button><Link className="link"to="/random">Random</Link></button>
       </div>
     </div>
   )

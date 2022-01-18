@@ -19,8 +19,8 @@ const Home = () => {
       <img className="logo" src="https://res.cloudinary.com/lesteban/image/upload/v1642512325/Logos/pngwing.com_w0gyym.png" alt="logo"/>
       <Form />
       <div className="examples">
-        {pokemons.map((pokemon) => (
-          <p> - {pokemon.name} - </p>
+        {pokemons.map((pokemon, i) => (
+          <p key={i}> - {pokemon.name} - </p>
         ))}
       </div>
     </div>

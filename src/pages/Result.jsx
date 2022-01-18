@@ -18,7 +18,6 @@ const Result = (props) => {
       })
   }, [searchPokemon])
 
-  console.log(pokemon)
   return (
     <div className="container-result">
       {pokemon.name ? <Card name={pokemon.name} photo={pokemon.sprites.other.dream_world.front_default}/> : <h1>Oops this Pokemon doesn't exist... please try again</h1>}

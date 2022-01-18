@@ -33,20 +33,17 @@ const Random = () => {
       setRandomIndex(aux)
       setLoading(false)
     }
-    getRandomIndex()
+    if(pokemons.length>0){getRandomIndex()}
   }, [pokemons])
 
-
-  
-
-  console.log(randomIndex)
   return (
     <div className="container-random">
       <div className="container-card">
-      {loading ? <p>Loading...</p> : randomIndex.map((pokemon) => (
+      {loading ? <p>Loading...</p> : randomIndex.map((pokemon, i) => (
         <Card 
         name={pokemon.name} 
         photo={pokemon.sprites.other.dream_world.front_default}
+        key={i}
         />
       )) }
       </div>
