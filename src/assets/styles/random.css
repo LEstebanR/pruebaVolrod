@@ -1,0 +1,16 @@
+.container-random{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container-card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,16 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.examples{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  height: 50vh;
+  color: #fff;
+}

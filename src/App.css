@@ -5,6 +5,11 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+
+}
+
+body{
+  background: linear-gradient(to top, #F05454, white );
 }
 
 @media (prefers-reduced-motion: no-preference) {
